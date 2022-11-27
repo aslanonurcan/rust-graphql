@@ -1,0 +1,21 @@
+[package]
+name = "rust-graphql"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.17"
+dotenv = "0.15.0"
+async-graphql = "4.0.16"
+async-graphql-axum = "4.0.16"
+tokio = {version = "1.18.2", features = ["full"]}
+serde = {version = "1.0.147", features = ["derive"]}
+metrics = "0.20.1"
+metrics-exporter-prometheus = "0.11.0"
+tracing = "0.1.37"
+tracing-opentelemetry = "0.18.0"
+tracing-subscriber = {version = "0.3.16", features = ["std", "env-filter"]}
+opentelemetry = {version = "0.18.0", features = ["rt-tokio"]}
+opentelemetry-jaeger = {version = "0.17.0", features = ["rt-tokio"]}
